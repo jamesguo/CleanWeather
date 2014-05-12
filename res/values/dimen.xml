@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="menu_item_padding">10dp</dimen>
+    <dimen name="menu_header_padding_top">8dp</dimen>
+    <dimen name="menu_header_line">3dp</dimen>
+    <dimen name="menu_icon_side">40dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+	<dimen name="city_select_index_height">30dip</dimen>
+	<dimen name="city_select_text_height">50dip</dimen>
+	<dimen name="text_size_city_list_index">8dip</dimen>
+	<dimen name="city_select_search_height">60dip</dimen>
+	<dimen name="titlePreferredHeight">50dip</dimen>
+	<dimen name="tabPreferredHeight">48dip</dimen>
+	<dimen name="bottomPreferredHeight">65dip</dimen>
+	<dimen name="btnHeight">30dip</dimen>
+	<dimen name="btnWidth">60dip</dimen>
+	<dimen name="weather_info_height">450dip</dimen>
+	<dimen name="forcast_info_height">45dip</dimen>
+	
+</resources>

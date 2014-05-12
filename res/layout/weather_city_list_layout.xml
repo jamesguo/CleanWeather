@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlePreferredHeight">
+
+        <!-- <Button
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/city_select_text_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dip"
+            android:text="搜索"/> -->
+
+        <!-- 搜索框 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/city_select_search_height"
+            android:layout_margin="10dip">
+
+            <EditText
+                android:id="@+id/auto_fix_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/city_select_search_height"
+                android:layout_centerInParent="true"
+                android:paddingRight="26dip"
+                android:singleLine="true"
+                android:background="@drawable/bg_search_bar_normal"
+                android:hint="中文、简拼、全拼" />
+
+            <ImageView
+                android:id="@+id/clean_search_text"
+                android:layout_width="26dip"
+                android:layout_height="26dip"
+                android:layout_alignRight="@+id/auto_fix_text"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/icon_close"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <ListView
+            android:id="@+id/city_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#333333"
+            android:dividerHeight="1px"
+            android:drawSelectorOnTop="false" />
+
+        <!-- <LinearLayout
+            android:id="@+id/list_view_index"
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:layout_margin="5dip"
+            android:background="@drawable/bg_commoncity"
+            android:orientation="vertical" /> -->
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="db_version">1</string>
+    
+    <string name="db_init">
+	CREATE TABLE [city] (
+	[area_id] VARCHAR(12) NOT NULL, 
+	[name_cn] VARCHAR(512), 
+	[name_en] VARCHAR(512), 
+	[district_cn] VARCHAR(512), 
+	[district_en] VARCHAR(512), 
+	[prov_cn] VARCHAR(512), 
+	[prov_en] VARCHAR(512), 
+	[cityjp] vARCHAR(256), 
+	[isSub] iNTEGER DEFAULT (\'0\'));
+   </string>
+   
+   <string name="updateCitySub">
+       update city set isSub = \'#isSub#\' where area_id = \'#area_id#\';
+   </string>
+   
+  <string name="getCityById">
+   		select * from city where area_id=\'#area_id#\'; 
+  </string>
+   
+   <string name="getCityList">
+   		select * from city order by name_en asc; 
+   </string>
+   
+   <string name="getSubCityList">
+   		select * from city where isSub>\'0\' order by isSub asc; 
+   </string>
+   
+   <string name="getMaxSub">
+   		select MAX(isSub) from city ; 
+   </string>
+   
+   <string name="getLikeCityList" formatted="false">
+   		select * from city where name_cn like \'#input#%\' or name_en like \'#input#%\' or cityjp like \'#input#%\' order by name_en asc; 
+   </string>
+   
+   <string name="getVersionInfo" >
+   		select version_info from version where version_type = \'app_version\'; 
+   </string>
+   
+   <string name="getExpiresTime" >
+   		select version_info from version where version_type = \'expires\'; 
+   </string>
+   <string name="updateExpiresTime" >
+   		update version set version_info = \'#version_info#\' where version_type = \'expires\'; 
+   </string>
+   <string name="getKey" >
+   		select version_info from version where version_type = \'key\'; 
+   </string>
+   <string name="updateKey" >
+   		update version set version_info = \'#version_info#\' where version_type = \'key\'; 
+   </string>
+</resources>
